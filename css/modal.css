@@ -172,10 +172,35 @@
   font-size: 0.875rem;
 }
 
-/* Modal Body */
+/* Scrollable Container - wraps description + charities */
+.modal__scrollable {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.modal__scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal__scrollable::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+.modal__scrollable::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.modal__scrollable::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Modal Body - description section */
 .modal__body {
   padding: var(--spacing-xl);
-  flex-shrink: 0;
+  padding-bottom: 0;
 }
 
 .crisis-description {
@@ -200,11 +225,7 @@
 /* Charities Section */
 .modal__charities {
   padding: var(--spacing-xl);
-  padding-top: 0;
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
+  padding-top: var(--spacing-lg);
 }
 
 .charities-title {
@@ -220,27 +241,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
-  max-height: 280px;
-  overflow-y: auto;
-  padding-right: var(--spacing-sm);
-}
-
-.charity-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.charity-list::-webkit-scrollbar-track {
-  background: var(--bg-tertiary);
-  border-radius: 3px;
-}
-
-.charity-list::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 3px;
-}
-
-.charity-list::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
 }
 
 .no-charities {
