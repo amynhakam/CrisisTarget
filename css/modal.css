@@ -1,0 +1,401 @@
+/* ============================================
+   Crisis Map - Modal Styles
+   ============================================ */
+
+/* Modal Base */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: var(--spacing-md);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+/* Modal Overlay */
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+/* Modal Content */
+.modal__content {
+  position: relative;
+  width: 100%;
+  max-width: var(--modal-max-width);
+  max-height: 90vh;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Close Button */
+.modal__close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--text-secondary);
+  background-color: var(--bg-tertiary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 1;
+}
+
+.modal__close:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  transform: rotate(90deg);
+}
+
+/* Modal Header */
+.modal__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl);
+  padding-right: calc(var(--spacing-xl) + 44px);
+  background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.modal__header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  word-wrap: break-word;
+}
+
+.modal__location {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Modal Meta (Badges) */
+.modal__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: var(--bg-tertiary);
+}
+
+.urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  color: var(--bg-primary);
+}
+
+.urgency-badge.urgency-1 { background-color: var(--urgency-1); }
+.urgency-badge.urgency-2 { background-color: var(--urgency-2); }
+.urgency-badge.urgency-3 { background-color: var(--urgency-3); }
+.urgency-badge.urgency-4 { background-color: var(--urgency-4); color: white; }
+.urgency-badge.urgency-5 { background-color: var(--urgency-5); color: white; }
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.affected-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: 0.75rem;
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.affected-icon {
+  font-size: 0.875rem;
+}
+
+/* Modal Body */
+.modal__body {
+  padding: var(--spacing-xl);
+  flex-shrink: 0;
+}
+
+.crisis-description {
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin-bottom: var(--spacing-lg);
+}
+
+.crisis-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.crisis-dates strong {
+  color: var(--text-secondary);
+}
+
+/* Charities Section */
+.modal__charities {
+  padding: var(--spacing-xl);
+  padding-top: 0;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.charities-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.charity-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: var(--spacing-sm);
+}
+
+.charity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.charity-list::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+.charity-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.charity-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+.no-charities {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Charity Card */
+.charity-card {
+  padding: var(--spacing-lg);
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  transition: border-color var(--transition-fast);
+}
+
+.charity-card:hover {
+  border-color: var(--accent);
+}
+
+.charity-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.charity-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.charity-card__rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.charity-card__rating .stars {
+  color: #ffc107;
+  font-size: 0.875rem;
+  letter-spacing: -2px;
+}
+
+.charity-card__rating .score {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.charity-card__category {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.charity-card__description {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.charity-card__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.charity-card__actions .btn {
+  flex: 1;
+  justify-content: center;
+}
+
+.charity-card__actions .btn--primary {
+  background: linear-gradient(135deg, var(--accent), #357abd);
+}
+
+.charity-card__actions .btn--primary:hover {
+  background: linear-gradient(135deg, #357abd, var(--accent));
+}
+
+/* ============================================
+   Mobile Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  .modal {
+    padding: 0;
+  }
+  
+  .modal__content {
+    max-width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    border-radius: 0;
+  }
+  
+  .modal__header {
+    padding: var(--spacing-lg);
+    padding-right: calc(var(--spacing-lg) + 44px);
+  }
+  
+  .modal__icon {
+    font-size: 2rem;
+  }
+  
+  .modal__title {
+    font-size: 1.25rem;
+  }
+  
+  .modal__meta {
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+  
+  .modal__body {
+    padding: var(--spacing-lg);
+  }
+  
+  .modal__charities {
+    padding: var(--spacing-lg);
+    padding-top: 0;
+  }
+  
+  .charity-card__header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .charity-card__actions {
+    flex-direction: column;
+  }
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+.modal__content.closing {
+  animation: modalSlideOut 0.2s ease forwards;
+}
+
+@keyframes modalSlideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}

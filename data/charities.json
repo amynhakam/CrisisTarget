@@ -1,0 +1,180 @@
+{
+  "charities": [
+    {
+      "id": "charity-001",
+      "name": "Doctors Without Borders (MSF)",
+      "rating": 4,
+      "score": 96.75,
+      "category": "International Medical Relief",
+      "crisisTypes": ["conflict", "disease", "refugee", "natural_disaster"],
+      "donateUrl": "https://donate.doctorswithoutborders.org/",
+      "websiteUrl": "https://www.doctorswithoutborders.org/",
+      "description": "Delivers emergency medical care to people affected by conflict, epidemics, disasters, and exclusion from healthcare. Operates in over 70 countries worldwide."
+    },
+    {
+      "id": "charity-002",
+      "name": "International Rescue Committee (IRC)",
+      "rating": 4,
+      "score": 94.21,
+      "category": "International Relief & Development",
+      "crisisTypes": ["conflict", "refugee", "natural_disaster", "famine"],
+      "donateUrl": "https://www.rescue.org/donate",
+      "websiteUrl": "https://www.rescue.org/",
+      "description": "Responds to the world's worst humanitarian crises, helping people survive, recover, and rebuild their lives. Works in 40+ countries and 29 U.S. cities."
+    },
+    {
+      "id": "charity-003",
+      "name": "UNICEF USA",
+      "rating": 4,
+      "score": 93.89,
+      "category": "Children's Welfare",
+      "crisisTypes": ["conflict", "famine", "disease", "natural_disaster", "refugee"],
+      "donateUrl": "https://www.unicefusa.org/donate",
+      "websiteUrl": "https://www.unicefusa.org/",
+      "description": "Works in 190+ countries to protect children's rights, help meet their basic needs, and expand opportunities for them to reach their full potential."
+    },
+    {
+      "id": "charity-004",
+      "name": "All Hands and Hearts",
+      "rating": 4,
+      "score": 95.32,
+      "category": "Disaster Relief",
+      "crisisTypes": ["natural_disaster"],
+      "donateUrl": "https://www.allhandsandhearts.org/donate/",
+      "websiteUrl": "https://www.allhandsandhearts.org/",
+      "description": "Effectively and efficiently addresses immediate and long-term needs of communities impacted by natural disasters. Mobilizes volunteers worldwide."
+    },
+    {
+      "id": "charity-005",
+      "name": "World Food Programme USA",
+      "rating": 4,
+      "score": 91.45,
+      "category": "Food & Hunger Relief",
+      "crisisTypes": ["famine", "conflict", "natural_disaster", "refugee"],
+      "donateUrl": "https://www.wfpusa.org/donate/",
+      "websiteUrl": "https://www.wfpusa.org/",
+      "description": "The world's largest humanitarian organization, saving lives in emergencies and using food assistance to build pathways to peace and stability."
+    },
+    {
+      "id": "charity-006",
+      "name": "ShelterBox USA",
+      "rating": 4,
+      "score": 92.67,
+      "category": "Emergency Shelter",
+      "crisisTypes": ["natural_disaster", "conflict"],
+      "donateUrl": "https://www.shelterboxusa.org/donate",
+      "websiteUrl": "https://www.shelterboxusa.org/",
+      "description": "Provides emergency shelter and essential supplies to families who have lost their homes to disaster or conflict. Has helped 2.5 million people since 2000."
+    },
+    {
+      "id": "charity-007",
+      "name": "CARE",
+      "rating": 4,
+      "score": 90.12,
+      "category": "International Relief & Development",
+      "crisisTypes": ["famine", "conflict", "refugee", "natural_disaster", "disease"],
+      "donateUrl": "https://www.care.org/donate",
+      "websiteUrl": "https://www.care.org/",
+      "description": "Fights global poverty with special focus on working alongside women and girls. Reached 174 million people in 104 countries last year."
+    },
+    {
+      "id": "charity-008",
+      "name": "Direct Relief",
+      "rating": 4,
+      "score": 99.47,
+      "category": "Medical Supplies & Assistance",
+      "crisisTypes": ["natural_disaster", "disease", "conflict"],
+      "donateUrl": "https://www.directrelief.org/donate/",
+      "websiteUrl": "https://www.directrelief.org/",
+      "description": "Improves health and lives of people affected by poverty or emergencies. Provides medical resources to locally-run health facilities worldwide."
+    },
+    {
+      "id": "charity-009",
+      "name": "Refugees International",
+      "rating": 4,
+      "score": 89.34,
+      "category": "Refugee Advocacy & Support",
+      "crisisTypes": ["refugee", "conflict"],
+      "donateUrl": "https://www.refugeesinternational.org/donate",
+      "websiteUrl": "https://www.refugeesinternational.org/",
+      "description": "Advocates for lifesaving assistance and protection for displaced people and promotes solutions to displacement crises around the world."
+    },
+    {
+      "id": "charity-010",
+      "name": "Mercy Corps",
+      "rating": 4,
+      "score": 88.92,
+      "category": "International Relief & Development",
+      "crisisTypes": ["conflict", "natural_disaster", "famine", "refugee"],
+      "donateUrl": "https://www.mercycorps.org/donate",
+      "websiteUrl": "https://www.mercycorps.org/",
+      "description": "Empowers people to survive through crisis, build better lives, and transform their communities for good. Reaches 53+ million people annually."
+    },
+    {
+      "id": "charity-011",
+      "name": "Action Against Hunger",
+      "rating": 4,
+      "score": 91.78,
+      "category": "Hunger & Nutrition",
+      "crisisTypes": ["famine", "conflict", "natural_disaster"],
+      "donateUrl": "https://www.actionagainsthunger.org/donate/",
+      "websiteUrl": "https://www.actionagainsthunger.org/",
+      "description": "A global humanitarian organization committed to ending world hunger. Reaches 28 million people each year across nearly 50 countries."
+    },
+    {
+      "id": "charity-012",
+      "name": "Catholic Relief Services",
+      "rating": 4,
+      "score": 89.56,
+      "category": "International Relief & Development",
+      "crisisTypes": ["conflict", "natural_disaster", "refugee", "famine"],
+      "donateUrl": "https://support.crs.org/donate",
+      "websiteUrl": "https://www.crs.org/",
+      "description": "Carries out the commitment of the Bishops of the United States to assist the poor and vulnerable overseas. Works in 100+ countries."
+    },
+    {
+      "id": "charity-013",
+      "name": "GlobalGiving",
+      "rating": 4,
+      "score": 93.41,
+      "category": "Philanthropic Platform",
+      "crisisTypes": ["natural_disaster", "conflict", "famine", "disease", "refugee"],
+      "donateUrl": "https://www.globalgiving.org/donate/",
+      "websiteUrl": "https://www.globalgiving.org/",
+      "description": "Connects nonprofits, donors, and companies in nearly every country. Has raised over $700 million for grassroots projects worldwide."
+    },
+    {
+      "id": "charity-014",
+      "name": "International Medical Corps",
+      "rating": 4,
+      "score": 90.23,
+      "category": "Medical Relief",
+      "crisisTypes": ["conflict", "natural_disaster", "disease", "refugee"],
+      "donateUrl": "https://internationalmedicalcorps.org/donate/",
+      "websiteUrl": "https://internationalmedicalcorps.org/",
+      "description": "Delivers emergency medical and related services to those affected by conflict, disaster and disease, no matter where they are."
+    },
+    {
+      "id": "charity-015",
+      "name": "Save the Children",
+      "rating": 3,
+      "score": 87.65,
+      "category": "Children's Welfare",
+      "crisisTypes": ["conflict", "famine", "natural_disaster", "refugee"],
+      "donateUrl": "https://www.savethechildren.org/us/ways-to-help/ways-to-give",
+      "websiteUrl": "https://www.savethechildren.org/",
+      "description": "Works in 100+ countries to give children a healthy start, opportunity to learn, and protection from harm. Responds to major emergencies."
+    },
+    {
+      "id": "charity-016",
+      "name": "Oxfam America",
+      "rating": 3,
+      "score": 85.89,
+      "category": "International Relief & Development",
+      "crisisTypes": ["famine", "conflict", "natural_disaster"],
+      "donateUrl": "https://www.oxfamamerica.org/donate/",
+      "websiteUrl": "https://www.oxfamamerica.org/",
+      "description": "Fights inequality to defeat poverty and injustice. Works in more than 90 countries with partners and communities."
+    }
+  ]
+}
