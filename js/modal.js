@@ -209,11 +209,29 @@ var Modal = (function() {
       '<div class="charity-card__actions">' +
         '<a href="' + escapeHtml(charity.websiteUrl) + '" ' +
           'target="_blank" rel="noopener noreferrer" ' +
-          'class="btn btn--secondary">Website</a>' +
+          'class="btn btn--secondary charity-link" data-url="' + escapeHtml(charity.websiteUrl) + '">Website</a>' +
         '<a href="' + escapeHtml(charity.donateUrl) + '" ' +
           'target="_blank" rel="noopener noreferrer" ' +
-          'class="btn btn--primary">Donate →</a>' +
+          'class="btn btn--primary charity-link" data-url="' + escapeHtml(charity.donateUrl) + '">Donate →</a>' +
       '</div>';
+    
+    // Add click handlers for mobile compatibility
+    var links = card.querySelectorAll('.charity-link');
+    links.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var url = this.getAttribute('data-url') || this.href;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+      // Touch event for mobile
+      link.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var url = this.getAttribute('data-url') || this.href;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+    });
     
     return card;
   }
